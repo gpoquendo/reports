@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  location: MyString
+  fund_partner: MyString
+  install_date: MyString
+  system: MyString
+  technician: MyString
+
+two:
+  name: MyString
+  location: MyString
+  fund_partner: MyString
+  install_date: MyString
+  system: MyString
+  technician: MyString
