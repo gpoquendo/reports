@@ -11,37 +11,47 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+<form class="row g-3">
+  <div class="row g-3">
+    <div class="field col-md-6">
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+    <div class="field col-md-6">
+      <%= form.label :location, class: "form-label" %>
+      <%= form.text_field :location, class: "form-control" %>
+    </div>
   </div>
+  <br/>
 
-  <div class="field">
-    <%= form.label :location %>
-    <%= form.text_field :location %>
+  <div class="row g-3">
+    <div class="field col-md-6">
+      <%= form.label :fund_partner, class: "form-label" %>
+      <%= form.text_field :fund_partner, class: "form-control" %>
+    </div>
+    <div class="field col-md-6">
+      <%= form.label :install_date, class: "form-label" %>
+      <%= form.text_field :install_date, class: "form-control" %>
+    </div>
   </div>
+  <br/>
 
-  <div class="field">
-    <%= form.label :fund_partner %>
-    <%= form.text_field :fund_partner %>
+  <div class="field col-12">
+    <%= form.label :system, class: "form-label" %>
+    <%= form.text_field :system, class: "form-control" %>
   </div>
+  <br/>
 
-  <div class="field">
-    <%= form.label :install_date %>
-    <%= form.text_field :install_date %>
+  <div class="field col-12">
+    <%= form.label :technician, class: "form-label" %>
+    <%= form.text_field :technician, class: "form-control" %>
   </div>
-
-  <div class="field">
-    <%= form.label :system %>
-    <%= form.text_field :system %>
-  </div>
-
-  <div class="field">
-    <%= form.label :technician %>
-    <%= form.text_field :technician %>
-  </div>
+  <br/>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-secondary" %>
   </div>
+</form>
+<br/>
+
 <% end %>

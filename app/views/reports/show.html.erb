@@ -1,34 +1,32 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @report.name %>
-</p>
+<div class="card border-dark mb-3">
+  <div class="card-header">
+    <%= @report.name %>
+  </div>
+  <div class="card-body text-dark">
+    <h4 class="card-title">Location</h4>
+    <p class="card-text">
+      <%= @report.location %>
+    </p>
+    <h4 class="card-title">Funding Partner</h4>
+    <p class="card-text">
+      <%= @report.fund_partner %>
+    </p>
+    <h4 class="card-title">Installation Date</h4>
+    <p class="card-text">
+      <%= @report.install_date %>
+    </p>
+    <h4 class="card-title">System Components</h4>
+    <p class="card-text">
+      <%= @report.system %>
+    </p>
+    <h4 class="card-title">Technicians</h4>
+    <p class="card-text">
+      <%= @report.technician %>
+    </p>
+  </div>
+</div>
 
-<p>
-  <strong>Location:</strong>
-  <%= @report.location %>
-</p>
-
-<p>
-  <strong>Fund partner:</strong>
-  <%= @report.fund_partner %>
-</p>
-
-<p>
-  <strong>Install date:</strong>
-  <%= @report.install_date %>
-</p>
-
-<p>
-  <strong>System:</strong>
-  <%= @report.system %>
-</p>
-
-<p>
-  <strong>Technician:</strong>
-  <%= @report.technician %>
-</p>
-
-<%= link_to 'Edit', edit_report_path(@report) %> |
-<%= link_to 'Back', reports_path %>
+<%= link_to 'Edit', edit_report_path(@report), class: "btn btn-dark" %>
+<%= link_to 'Back', reports_path, class: "btn btn-secondary" %>
